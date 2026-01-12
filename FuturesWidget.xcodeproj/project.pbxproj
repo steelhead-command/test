@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07E42883B4459ED31D9B81F8 /* FuturesWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F1CC707AAEAEB366ABD0B3 /* FuturesWidgetApp.swift */; };
+		19C57C6E7D00F406E4375CBB /* FuturesWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF9FAD76415F6A3C13E4AD /* FuturesWidgetBundle.swift */; };
+		1BCAE751813D250D1F4D82DD /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8BAAC51A507C00F64D6A3B /* Provider.swift */; };
+		3CE991DC9641FFAF79031BFD /* FuturesPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A8903D637308F8C366949A /* FuturesPrice.swift */; };
+		79AE63F77B9B4A4061ABCF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF50B99582BCC6E2AC98812 /* Assets.xcassets */; };
+		7F5518C59DC65F335380B81C /* FuturesWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A313A30F2A9A9165A64A07 /* FuturesWidget.swift */; };
+		8984A04261EF7B66962A8F3A /* PriceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B51E71E80E2B4014DC33E5 /* PriceRowView.swift */; };
+		9A81D99DFCC3BC3FBB2C0F7C /* YahooFinanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB7DFDA661F0EBB2E2B245 /* YahooFinanceService.swift */; };
+		9DEE8CDDB6BE1D6C11C2FA61 /* YahooFinanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB7DFDA661F0EBB2E2B245 /* YahooFinanceService.swift */; };
+		AFE450469E37E3959B5CE297 /* FuturesPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A8903D637308F8C366949A /* FuturesPrice.swift */; };
+		B6284143AD3DD08914AFADB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9777B26E1A22146DF9D98BD1 /* Assets.xcassets */; };
+		D6FA524BEDA966E149BD692F /* FuturesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5F4F13ABA59106A957166424 /* FuturesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1F874AC5C45D4365376BD85 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0EB68B624AA0EA8FCAB390 /* MediumWidgetView.swift */; };
+		EA3333E2D3ABCC29953C43D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A19E5F6712FA8E488BE228F /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F60386B18B4CB8EF7328A12B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 599F1D5037362873DF76C929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B36BEA9EC001A4847D84A52;
+			remoteInfo = FuturesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9FB5D8C33877AA88F8DF94C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6FA524BEDA966E149BD692F /* FuturesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09A8903D637308F8C366949A /* FuturesPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPrice.swift; sourceTree = "<group>"; };
+		0AB743A6772B138D59E4CB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		16D3363B27F83E79CFCD9ABE /* FuturesWidget.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FuturesWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F1CC707AAEAEB366ABD0B3 /* FuturesWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesWidgetApp.swift; sourceTree = "<group>"; };
+		2F8BAAC51A507C00F64D6A3B /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		3A19E5F6712FA8E488BE228F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DF50B99582BCC6E2AC98812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F4F13ABA59106A957166424 /* FuturesWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = FuturesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9777B26E1A22146DF9D98BD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0EB68B624AA0EA8FCAB390 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		D3FF9FAD76415F6A3C13E4AD /* FuturesWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesWidgetBundle.swift; sourceTree = "<group>"; };
+		E0B51E71E80E2B4014DC33E5 /* PriceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceRowView.swift; sourceTree = "<group>"; };
+		E9A313A30F2A9A9165A64A07 /* FuturesWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesWidget.swift; sourceTree = "<group>"; };
+		F914E96FBA9D1228A904E94B /* FuturesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FuturesWidgetExtension.entitlements; sourceTree = "<group>"; };
+		FEDB7DFDA661F0EBB2E2B245 /* YahooFinanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooFinanceService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1B13711D956C773B50589007 /* FuturesWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4DF50B99582BCC6E2AC98812 /* Assets.xcassets */,
+				E9A313A30F2A9A9165A64A07 /* FuturesWidget.swift */,
+				D3FF9FAD76415F6A3C13E4AD /* FuturesWidgetBundle.swift */,
+				F914E96FBA9D1228A904E94B /* FuturesWidgetExtension.entitlements */,
+				0AB743A6772B138D59E4CB34 /* Info.plist */,
+				2F8BAAC51A507C00F64D6A3B /* Provider.swift */,
+				7E2EC1F0B9650A81E66AE010 /* WidgetViews */,
+			);
+			path = FuturesWidgetExtension;
+			sourceTree = "<group>";
+		};
+		414AD956E7DECDD3CCB5CB66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0B51E71E80E2B4014DC33E5 /* PriceRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F7F685EB74C3426E718A570 = {
+			isa = PBXGroup;
+			children = (
+				996957ADD59EA67FC30FDB46 /* FuturesWidget */,
+				1B13711D956C773B50589007 /* FuturesWidgetExtension */,
+				917A28BBD6F788C335DD1C85 /* Shared */,
+				FC1988DCDC15B77D46977806 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E2EC1F0B9650A81E66AE010 /* WidgetViews */ = {
+			isa = PBXGroup;
+			children = (
+				AE0EB68B624AA0EA8FCAB390 /* MediumWidgetView.swift */,
+			);
+			path = WidgetViews;
+			sourceTree = "<group>";
+		};
+		917A28BBD6F788C335DD1C85 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		996957ADD59EA67FC30FDB46 /* FuturesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9777B26E1A22146DF9D98BD1 /* Assets.xcassets */,
+				3A19E5F6712FA8E488BE228F /* ContentView.swift */,
+				16F1CC707AAEAEB366ABD0B3 /* FuturesWidgetApp.swift */,
+				FD0F7AE9D3111FA29A9EDDBE /* Models */,
+				ED16D9CA6DDB75036334EA91 /* Services */,
+				414AD956E7DECDD3CCB5CB66 /* Views */,
+			);
+			path = FuturesWidget;
+			sourceTree = "<group>";
+		};
+		ED16D9CA6DDB75036334EA91 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEDB7DFDA661F0EBB2E2B245 /* YahooFinanceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC1988DCDC15B77D46977806 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16D3363B27F83E79CFCD9ABE /* FuturesWidget.app */,
+				5F4F13ABA59106A957166424 /* FuturesWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD0F7AE9D3111FA29A9EDDBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09A8903D637308F8C366949A /* FuturesPrice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B36BEA9EC001A4847D84A52 /* FuturesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0BA908FB9B461E2F78ED181 /* Build configuration list for PBXNativeTarget "FuturesWidgetExtension" */;
+			buildPhases = (
+				F63B156A0ADAB29AECF498D1 /* Sources */,
+				0811E4F37675706D0F1BBE7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuturesWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = FuturesWidgetExtension;
+			productReference = 5F4F13ABA59106A957166424 /* FuturesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F720098CA6AFDD1C83CF0F69 /* FuturesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98F62B55180E3F26F741560 /* Build configuration list for PBXNativeTarget "FuturesWidget" */;
+			buildPhases = (
+				D9311417735B2FB34D0C47A6 /* Sources */,
+				ABC8A029E66EC6F175607174 /* Resources */,
+				F9FB5D8C33877AA88F8DF94C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E828E265FAFA78F50964F6 /* PBXTargetDependency */,
+			);
+			name = FuturesWidget;
+			packageProductDependencies = (
+			);
+			productName = FuturesWidget;
+			productReference = 16D3363B27F83E79CFCD9ABE /* FuturesWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		599F1D5037362873DF76C929 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					1B36BEA9EC001A4847D84A52 = {
+						DevelopmentTeam = "";
+					};
+					F720098CA6AFDD1C83CF0F69 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 43CBF8B6C1D76CE2AB2CFC1C /* Build configuration list for PBXProject "FuturesWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5F7F685EB74C3426E718A570;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F720098CA6AFDD1C83CF0F69 /* FuturesWidget */,
+				1B36BEA9EC001A4847D84A52 /* FuturesWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0811E4F37675706D0F1BBE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79AE63F77B9B4A4061ABCF50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABC8A029E66EC6F175607174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6284143AD3DD08914AFADB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9311417735B2FB34D0C47A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3333E2D3ABCC29953C43D3 /* ContentView.swift in Sources */,
+				AFE450469E37E3959B5CE297 /* FuturesPrice.swift in Sources */,
+				07E42883B4459ED31D9B81F8 /* FuturesWidgetApp.swift in Sources */,
+				8984A04261EF7B66962A8F3A /* PriceRowView.swift in Sources */,
+				9A81D99DFCC3BC3FBB2C0F7C /* YahooFinanceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63B156A0ADAB29AECF498D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE991DC9641FFAF79031BFD /* FuturesPrice.swift in Sources */,
+				7F5518C59DC65F335380B81C /* FuturesWidget.swift in Sources */,
+				19C57C6E7D00F406E4375CBB /* FuturesWidgetBundle.swift in Sources */,
+				E1F874AC5C45D4365376BD85 /* MediumWidgetView.swift in Sources */,
+				1BCAE751813D250D1F4D82DD /* Provider.swift in Sources */,
+				9DEE8CDDB6BE1D6C11C2FA61 /* YahooFinanceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8E828E265FAFA78F50964F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B36BEA9EC001A4847D84A52 /* FuturesWidgetExtension */;
+			targetProxy = F60386B18B4CB8EF7328A12B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5DE1C4AEBDFC8B341207D963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		670D02573AA2A7F6A30D048E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureswidget.app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		763D94E65FF5ECA1D076CF08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_GENERATION_MODE = GeneratedFile;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureswidget.app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78BB88D7CFE556362A83A912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FuturesWidgetExtension/FuturesWidgetExtension.entitlements;
+				INFOPLIST_FILE = FuturesWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureswidget.app.widget;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4612CAC6DC208066768C894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FuturesWidgetExtension/FuturesWidgetExtension.entitlements;
+				INFOPLIST_FILE = FuturesWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureswidget.app.widget;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C83FAEE180F89215FDEF8B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43CBF8B6C1D76CE2AB2CFC1C /* Build configuration list for PBXProject "FuturesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83FAEE180F89215FDEF8B59 /* Debug */,
+				5DE1C4AEBDFC8B341207D963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A98F62B55180E3F26F741560 /* Build configuration list for PBXNativeTarget "FuturesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670D02573AA2A7F6A30D048E /* Debug */,
+				763D94E65FF5ECA1D076CF08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C0BA908FB9B461E2F78ED181 /* Build configuration list for PBXNativeTarget "FuturesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4612CAC6DC208066768C894 /* Debug */,
+				78BB88D7CFE556362A83A912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 599F1D5037362873DF76C929 /* Project object */;
+}

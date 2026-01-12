@@ -1,0 +1,68 @@
+name: FuturesWidget
+options:
+  bundleIdPrefix: com.futureswidget
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.2"
+
+settings:
+  DEVELOPMENT_TEAM: ""
+  CODE_SIGN_IDENTITY: ""
+  CODE_SIGNING_REQUIRED: "NO"
+  CODE_SIGNING_ALLOWED: "NO"
+  MARKETING_VERSION: "1.0"
+  CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  FuturesWidget:
+    type: application
+    platform: iOS
+    sources:
+      - path: FuturesWidget
+        excludes:
+          - "**/.DS_Store"
+      - path: Shared
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.futureswidget.app
+      INFOPLIST_GENERATION_MODE: GeneratedFile
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+      INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+      INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+      INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+      SWIFT_EMIT_LOC_STRINGS: YES
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: FuturesWidgetExtension
+        embed: true
+
+  FuturesWidgetExtension:
+    type: app-extension
+    platform: iOS
+    product: FuturesWidgetExtension.appex
+    sources:
+      - path: FuturesWidgetExtension
+        excludes:
+          - "**/.DS_Store"
+      - path: FuturesWidget/Models
+        excludes:
+          - "**/.DS_Store"
+      - path: FuturesWidget/Services
+        excludes:
+          - "**/.DS_Store"
+    info:
+      path: FuturesWidgetExtension/Info.plist
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.futureswidget.app.widget
+      SWIFT_EMIT_LOC_STRINGS: YES
+      ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+      ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+    entitlements:
+      path: FuturesWidgetExtension/FuturesWidgetExtension.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.futureswidget.shared
